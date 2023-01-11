@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <title>to do list</title>
+</head>
+
+<body>
+    <h1> <%= weekDay %> </h1>
+
+    <form action="/" method="post">
+        <input type="text" name="newItem"></input>
+        <button type="submit">add</button>
+    </form>
+
+    <ul>
+        <% for(var i=0;i<list.length;i++){ %>
+            <li><%= list[i] %></li>
+        <% } %>
+    </ul>
+</body>
